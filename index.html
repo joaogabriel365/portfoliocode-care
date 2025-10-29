@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code&Care - Inovação em Engenharia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="tela-inicial">
+        <div class="conteudo-central">
+            <h1>Code&Care</h1>
+            <p class="subtitulo">Inovação em Engenharia da Computação</p>
+            <p class="descricao">Desenvolvendo soluções tecnológicas através da integração de software e hardware</p>
+            <a href="#sobre-nos" class="botao-cta">Conheça o Projeto &darr;</a>
+        </div>
+    </main>
+
+    <section id="sobre-nos">
+        <div class="container">
+            <div class="header-secao">
+                <div class="secao-icone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 1 1 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.49 5.49 0 0 0 4 13H1c0-.264.167-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM4.5 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m.5-2.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                    </svg>
+                </div>
+                <h2>Sobre Nós</h2>
+                <p class="descricao-secao">
+                    Somos um grupo de estudantes de Engenharia da Computação da FIAP, dedicados a criar soluções inovadoras em parceria com a ACHE.
+                </p>
+            </div>
+
+            <div class="conteudo-missao-membros">
+                
+                <div class="missao-container">
+                    <h3>Nossa Missão</h3>
+                    <p>
+                        Desenvolver um projeto que integra conhecimentos de software e hardware, aplicando as melhores práticas da engenharia da computação para resolver desafios reais em parceria com a ACHE.
+                    </p>
+                    <p>
+                        Buscamos não apenas o aprendizado técnico, mas também o desenvolvimento de habilidades de trabalho em equipe, gestão de projetos e inovação tecnológica.
+                    </p>
+                </div>
+
+                <div class="grid-membros-clicaveis">
+                    
+                    <div class="card-membro-detalhe" data-membro="davi" onclick="abrirModal('davi')">
+                        <div class="membro-icone">
+                            <img src="membro1.jpg" alt="Foto de Davi Biaggioli" class="foto-membro">
+                        </div>
+                        <h3>Davi Biaggioli</h3>
+                        <p class="membro-funcao">Product Owner (PO) & Engenheiro de Software</p>
+                    </div>
+
+                    <div class="card-membro-detalhe" data-membro="gustavo" onclick="abrirModal('gustavo')">
+                        <div class="membro-icone">
+                            <img src="membro2.jpg" alt="Foto de Gustavo Demeis" class="foto-membro">
+                        </div>
+                        <h3>Gustavo Demeis</h3>
+                        <p class="membro-funcao">Analista de comunicação & Marketing</p>
+                    </div>
+                    
+                    <div class="card-membro-detalhe" data-membro="jean" onclick="abrirModal('jean')">
+                        <div class="membro-icone">
+                            <img src="membro3.jpg" alt="Foto de Jean Lucas" class="foto-membro">
+                        </div>
+                        <h3>Jean Lucas</h3>
+                        <p class="membro-funcao">Designer 3D & Projetista</p>
+                    </div>
+
+                    <div class="card-membro-detalhe" data-membro="joao" onclick="abrirModal('joao')">
+                        <div class="membro-icone">
+                            <img src="membro4.jpg" alt="Foto de João Gabriel" class="foto-membro">
+                        </div>
+                        <h3>João Gabriel</h3>
+                        <p class="membro-funcao">Gerente de Projeto & Engenheiro de Implementação Física</p>
+                    </div>
+
+                    <div class="card-membro-detalhe" data-membro="lucas" onclick="abrirModal('lucas')">
+                        <div class="membro-icone">
+                            <img src="membro5.jpg" alt="Foto de Lucas Akira" class="foto-membro">
+                        </div>
+                        <h3>Lucas Akira</h3>
+                        <p class="membro-funcao">Desenvolvedor Full Stack & Engenheiro de Software Web</p>
+                    </div>
+
+                    <div class="card-membro-detalhe" data-membro="pedro" onclick="abrirModal('pedro')">
+                        <div class="membro-icone">
+                            <img src="membro6.jpg" alt="Foto de Pedro Alvarez" class="foto-membro">
+                        </div>
+                        <h3>Pedro Alvarez</h3>
+                        <p class="membro-funcao">Desenvolvedor & Suporte</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeto">
+        <div class="container">
+            <h2 class="titulo-projeto">O Projeto</h2>
+            <p class="subtitulo-projeto">Uma parceria entre FIAP e ACHE para desenvolver soluções tecnológicas que integram hardware e software de forma inovadora.</p>
+            
+            <div class="grid-destaque">
+                <div class="card-destaque">
+                    <div class="destaque-icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 0a5 5 0 1 1 8.941 2.569 2 2 0 1 1-.411 2.193A5.006 5.006 0 0 1 1 8m4.5-7.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 16a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M.5 8a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m15 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M3 0a.5.5 0 0 1 .5.5V1h-1V.5A.5.5 0 0 1 3 0m10 0a.5.5 0 0 1 .5.5V1h-1V.5A.5.5 0 0 1 13 0M3 16a.5.5 0 0 1 .5-.5V15h-1v.5a.5.5 0 0 1 .5.5m10 0a.5.5 0 0 1 .5-.5V15h-1v.5a.5.5 0 0 1 .5.5"/>
+                        </svg>
+                    </div>
+                    <h4>Inovação</h4>
+                    <p>Aplicando tecnologias de ponta para criar soluções práticas e eficientes.</p>
+                </div>
+                
+                <div class="card-destaque">
+                    <div class="destaque-icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.774 5.56M2.81 4.293A.5.5 0 0 1 3.5 4h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.685-.707zM.83 7.846A.5.5 0 0 1 1.5 8h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.685-.707zM.83 12.846A.5.5 0 0 1 1.5 13h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.685-.707zM.83 2.846A.5.5 0 0 1 1.5 3h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.685-.707zM3.774 1.56M2.81 12.293A.5.5 0 0 1 3.5 12h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.685-.707z"/>
+                        </svg>
+                    </div>
+                    <h4>Objetivo</h4>
+                    <p>Desenvolver um sistema integrado que une software e hardware de forma harmoniosa.</p>
+                </div>
+
+                <div class="card-destaque">
+                    <div class="destaque-icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M15.5 0a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 1 0V.5a.5.5 0 0 0-.5-.5zM8 0a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 1 0V.5A.5.5 0 0 0 8 0zM.5 8a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zM.5 16a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zM8 8a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 1 0V.5A.5.5 0 0 0 8 0z"/>
+                        </svg>
+                    </div>
+                    <h4>Impacto</h4>
+                    <p>Criar uma solução que possa fazer diferença real no mercado farmacêutico.</p>
+                </div>
+            </div>
+            
+            <div class="parceria-container">
+                <h3>Sobre a Parceria</h3>
+                <p>Este projeto nasceu da colaboração entre a FIAP, referência em educação tecnológica, e a ACHE, uma das principais empresas farmacêuticas do Brasil.</p>
+                <p>Nosso objetivo é aplicar os conhecimentos adquiridos durante o curso de Engenharia da Computação para desenvolver uma solução completa que integra componentes de hardware e software.</p>
+                <p>O projeto abrange desde a concepção e prototipagem de circuitos eletrônicos até o desenvolvimento de interfaces de software intuitivas e eficientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="software">
+        <div class="container">
+            <div class="header-software">
+                <div class="icone-software">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M10.472 1.95L5.528 14.05l-1.637-.621L8.835 1.329l1.637.621zM5.503 12.637l-1.396.953a.5.5 0 0 1-.689-.251l-2.071-5.177a.5.5 0 0 1 .251-.689l1.396-.953a.5.5 0 0 1 .689.251l2.071 5.177a.5.5 0 0 1-.251.689zm5.006.953l1.396-.953a.5.5 0 0 0 .689-.251l2.071-5.177a.5.5 0 0 0-.251-.689l-1.396.953a.5.5 0 0 0-.689.251l-2.071 5.177a.5.5 0 0 0 .251.689z"/>
+                    </svg>
+                </div>
+                <h2>Software</h2>
+                <p class="subtitulo-software">Conheça as soluções de software que desenvolvemos para o projeto</p>
+            </div>
+
+            <div class="grid-videos">
+                <div class="card-video">
+                    <div class="video-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                    </div>
+                    <h4>Demo da Interface Principal</h4>
+                    <p>Demonstração das funcionalidades principais do software</p>
+                </div>
+
+                <div class="card-video">
+                    <div class="video-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                    </div>
+                    <h4>Arquitetura do Sistema</h4>
+                    <p>Explicação técnica da arquitetura e tecnologias utilizadas</p>
+                </div>
+            </div>
+
+            <div class="tecnologias-container">
+                <h3>Tecnologias Utilizadas</h3>
+                <div class="grid-tecnologias">
+                    <ul>
+                        <li><span class="bullet-rosa"></span>React + TypeScript</li>
+                        <li><span class="bullet-rosa"></span>Node.js + Express</li>
+                        <li><span class="bullet-rosa"></span>PostgreSQL</li>
+                    </ul>
+                    <ul>
+                        <li><span class="bullet-rosa"></span>APIs RESTful</li>
+                        <li><span class="bullet-rosa"></span>Tailwind CSS</li>
+                        <li><span class="bullet-rosa"></span>Git + GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="hardware">
+        <div class="container">
+            <div class="header-hardware">
+                <div class="icone-hardware">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195l.079.289c.877 3.141-2.546 5.8-5.748 4.921l-.289-.08c-3.141-.877-5.8 2.546-4.921 5.748l.08.289c.27.098.56.16.862.195z"/>
+                    </svg>
+                </div>
+                <h2>Hardware</h2>
+                <p class="subtitulo-hardware">Explore os componentes físicos e eletrônicos que fazem parte do projeto</p>
+            </div>
+
+            <div class="grid-videos">
+                <div class="card-video">
+                    <div class="video-placeholder-hardware">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                    </div>
+                    <h4>Protótipo em Funcionamento</h4>
+                    <p>Demonstração do hardware funcionando em tempo real</p>
+                </div>
+
+                <div class="card-video">
+                    <div class="video-placeholder-hardware">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        </svg>
+                    </div>
+                    <h4>Montagem e Componentes</h4>
+                    <p>Processo de montagem e explicação dos componentes utilizados</p>
+                </div>
+            </div>
+
+            <div class="tecnologias-container">
+                <h3>Componentes Principais</h3>
+                <div class="grid-tecnologias">
+                    <ul>
+                        <li><span class="bullet-rosa"></span>Arduino/ESP32</li>
+                        <li><span class="bullet-rosa"></span>Sensores diversos</li>
+                        <li><span class="bullet-rosa"></span>Display LCD</li>
+                    </ul>
+                    <ul>
+                        <li><span class="bullet-rosa"></span>Módulos de comunicação</li>
+                        <li><span class="bullet-rosa"></span>Fonte de alimentação</li>
+                        <li><span class="bullet-rosa"></span>PCB customizada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="conteudo-footer-aprimorado">
+                
+                <div class="coluna-logo-info">
+                    <h3>Code&Care</h3>
+                    <p class="tagline">Inovação em Engenharia da Computação</p>
+                    <p class="descricao-curta">
+                        Desenvolvendo soluções tecnológicas que integram software e hardware para desafios reais.
+                    </p>
+                </div>
+
+                <div class="coluna-links-aprimorada">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="#projeto">O Projeto</a></li>
+                        <li><a href="#software">Software</a></li>
+                        <li><a href="#hardware">Hardware</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna-contato-aprimorada">
+                    <h4>Fale Conosco</h4>
+                    <div class="bloco-contato">
+                        <span class="label">E-mail:</span>
+                        <a href="mailto:code&carefiap@gmail.com.br">code&carefiap@gmail.com.br</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright-aprimorado">
+                <div class="linha-separadora"></div>
+                <p>&copy; 2025 Code&Care. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modalMembro" class="modal-overlay" onclick="fecharModal(event)">
+        <div class="modal-conteudo">
+            <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+            
+            <div class="modal-header">
+                <img id="modalFoto" src="" alt="Foto do Membro" class="foto-modal">
+                <h3 id="modalNome">Nome do Membro</h3>
+                <p id="modalFuncao" class="funcao-modal">Função do Membro</p>
+            </div>
+
+            <div class="modal-body">
+                <p id="modalTexto">
+                    Como parte do time Code&Care, este membro demonstrou excelência e dedicação em suas responsabilidades, contribuindo ativamente para a integração bem-sucedida das soluções de software e hardware. Sua expertise foi crucial para superarmos os desafios técnicos do projeto.
+                </p>
+                <p class="nota-modal">
+                    *Nota: Este texto pode ser editado futuramente para incluir detalhes específicos sobre a contribuição de cada integrante.*
+                </p>
+                
+                <div class="modal-social">
+                    <a id="modalLinkedinLink" href="#" target="_blank" class="linkedin-link">
+                         <img src="linkedin-icon.png" class="linkedin-icon-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    // 1. DADOS DOS MEMBROS
+    const dadosMembros = {
+        davi: {
+            nome: "Davi Biaggioli",
+            funcao: "Product Owner (PO) & Engenheiro de Software",
+            foto: "membro1.jpg", 
+            linkedin: "https://www.linkedin.com/in/davibiaggioli/"
+        },
+        gustavo: {
+            nome: "Gustavo Demeis",
+            funcao: "Analista de comunicação & Marketing",
+            foto: "membro2.jpg",
+            linkedin: "https://www.linkedin.com/in/gustavo-demeis-267050265/"
+        },
+        jean: {
+            nome: "Jean Lucas",
+            funcao: "Designer 3D & Projetista",
+            foto: "membro3.jpg",
+            linkedin: "https://www.linkedin.com/in/jeandepieri/"
+        },
+        joao: {
+            nome: "João Gabriel",
+            funcao: "Gerente de Projeto & Engenheiro de Implementação Física",
+            foto: "membro4.jpg",
+            linkedin: "https://www.linkedin.com/in/jo%C3%A3o-gabriel-de-bortoli-ribeiro/"
+        },
+        lucas: {
+            nome: "Lucas Akira",
+            funcao: "Desenvolvedor Full Stack & Engenheiro de Software Web",
+            foto: "membro5.jpg",
+            linkedin: "https://www.linkedin.com/in/lucas-akira-watanabe-b49ba3255/"
+        },
+        pedro: {
+            nome: "Pedro Alvarez",
+            funcao: "Desenvolvedor & Suporte",
+            foto: "membro6.jpg",
+            linkedin: "https://www.linkedin.com/in/pedroalvarezcerto/"
+        }
+    };
+
+    const modal = document.getElementById('modalMembro');
+    const modalFoto = document.getElementById('modalFoto');
+    const modalNome = document.getElementById('modalNome');
+    const modalFuncao = document.getElementById('modalFuncao');
+    const modalLinkedinLink = document.getElementById('modalLinkedinLink'); 
+
+    // 2. FUNÇÃO PARA ABRIR O MODAL
+    function abrirModal(idMembro) {
+        const membro = dadosMembros[idMembro];
+
+        // Preenche o Modal com os dados do membro
+        modalFoto.src = membro.foto;
+        modalFoto.alt = `Foto de ${membro.nome}`;
+        modalNome.textContent = membro.nome;
+        modalFuncao.textContent = membro.funcao;
+        
+        // Define o atributo href do link do LinkedIn
+        modalLinkedinLink.href = membro.linkedin;
+
+        // Exibe o modal
+        modal.style.display = 'block';
+
+        // Bloqueia o scroll do corpo da página
+        document.body.style.overflow = 'hidden';
+    }
+
+    // 3. FUNÇÕES PARA FECHAR O MODAL
+    function fecharModal(event) {
+        // Se o evento existe e o clique foi diretamente no overlay
+        // É importante verificar se o clique não foi dentro do conteúdo do modal
+        if (event && event.target.id === 'modalMembro') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        } else if (!event) { // Chamada sem evento (ex: tecla ESC)
+             modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    // Fecha o modal ao pressionar a tecla ESC
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            fecharModal();
+        }
+    });
+
+</script>
+
+</body>
+</html>
